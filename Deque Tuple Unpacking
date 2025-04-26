@@ -1,0 +1,12 @@
+from collections import deque
+
+a = deque()
+a.append((100, 2))
+a.append((200, 3))
+a.append((300, 4))
+
+print(a)
+(x, y, z) = a 
+print(x)  # (100, 2)
+print(y)  # (200, 3)
+print(z)  # (300, 4)
