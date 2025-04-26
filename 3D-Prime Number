@@ -1,0 +1,24 @@
+def is_prime(a):
+    if(a<2):
+        return False
+    for i in range(2,a):
+        if(a%i==0):
+            return False
+    return True
+def sum_dig(a):
+    x = sum(int(digit) for digit in str(a))
+    return x
+
+def tot_dig(a):
+    return len(str(a))
+n=int(input("Enter any number:"))
+res=[]
+a=1
+while(len(res)!=n):
+    if(is_prime(a)):
+        s=sum_dig(a)
+        tot=tot_dig(a)
+        if(is_prime(s)) and is_prime(tot):
+            res.append(a)
+    a=a+1
+print(res)    
