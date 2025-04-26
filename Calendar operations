@@ -1,0 +1,9 @@
+import calendar
+
+n=int(input("Enter the year: "))
+print(calendar.calendar(n))
+print(calendar.isleap(n))
+print(calendar.month(n,2))
+x=calendar.weekday(2025,4,24)
+days=["MONDAY","TUESDAY","WEDNESDAY","THURSDAY","FRIDAY","SATURDAY","SUNDAY"]
+print(days[x])
